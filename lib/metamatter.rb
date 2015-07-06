@@ -1,5 +1,6 @@
 require 'octokit'
-require 'pry'
+require 'algorithmia'
+require 'pp'
 
 module Metamatter
   class << self
@@ -11,10 +12,20 @@ module Metamatter
     def extract(repo_with_owner)
       # Do something like...
       # Get contributors
-      # authors = contributors(repo_with_owner)
-      docs = readme(repo_with_owner)
+      authors = contributors(repo_with_owner)
+      # docs = readme(repo_with_owner)
       # Get the readme
       # To some LDA analysis on the README to work out what this project is doing
+      tags = algorithmia_tags(repo_with_owner)
+
+      return { :authors => authors, :tags => tags }
+    end
+
+    def algorithmia_tags(repo_with_owner)
+      Algorithmia.api_key = ENV['ALGORITHMIA_TOKEN']
+      # Expects params as [owner, repo] - see https://algorithmia.com/algorithms/tags/AutoTagGithub
+      query = Algorithmia.call("tags/AutoTagGithub", repo_with_owner.split('/'))
+      return query.result.keys
     end
 
     def contributors(repo_with_owner)
