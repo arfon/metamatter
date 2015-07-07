@@ -18,7 +18,6 @@ module Metamatter
     end
 
     def extract
-      readme = Readme.new(self).contents
       authors = Contributors.new(self).list
 
       # To some LDA analysis on the README to work out what this project is doing
