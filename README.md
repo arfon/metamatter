@@ -39,6 +39,12 @@ GITHUB_TOKEN=your_github_token ALGORITHMIA_TOKEN=your_algorithmia_token\
 metamatter extract arfon/metamatter
 
 {
+  "repository": {
+    "name": "metamatter",
+    "location": "https://github.com/arfon/metamatter",
+    "description": "Minimal metadata extractor for the GitHub API",
+    "created_at": "2015-07-06 10:42:12 UTC"
+  },
   "authors": [
     {
       "name": "Arfon Smith",
@@ -48,14 +54,12 @@ metamatter extract arfon/metamatter
     }
   ],
   "tags": [
-    "ultimately",
-    "produce",
-    "blog",
-    "usage",
-    "post",
-    "goal",
-    "similar",
-    "output"
+    "api",
+    "extractor",
+    "minimal",
+    "metadata",
+    "github",
+    "metamatter"
   ],
   "license": {
     "name": "MIT License",
