@@ -33,7 +33,8 @@ repository.extract    #=> '{"authors": [{"name": "Arfon Smith", "email":"arfon.s
 ```
 
 ```bash
-GITHUB_TOKEN=your_github_token ALGORITHMIA_TOKEN=your_algorithmia_token metamatter extract arfon/metamatter
+GITHUB_TOKEN=your_github_token ALGORITHMIA_TOKEN=your_algorithmia_token\
+metamatter extract arfon/metamatter
 
 {
   "authors": [
