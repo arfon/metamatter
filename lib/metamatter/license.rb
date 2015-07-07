@@ -1,5 +1,4 @@
 require_relative 'helpers'
-require 'pry'
 
 module Metamatter
   class License

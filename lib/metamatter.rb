@@ -2,6 +2,7 @@ require 'octokit'
 require_relative 'metamatter/classification'
 require_relative 'metamatter/contributors'
 require_relative 'metamatter/license'
+require_relative 'metamatter/readme'
 
 module Metamatter
   class Repository
@@ -17,6 +18,7 @@ module Metamatter
     end
 
     def extract
+      readme = Readme.new(self).contents
       authors = Contributors.new(self).list
 
       # To some LDA analysis on the README to work out what this project is doing
@@ -25,9 +27,13 @@ module Metamatter
       # License detection
       license = License.new(self).license_hash
 
+      # README parsing for DOI
+      doi = Readme.new(self).zenodo_doi
+
       return JSON.pretty_generate({ :authors => authors,
                                     :tags => tags,
-                                    :license => license })
+                                    :license => license,
+                                    :doi => doi })
     end
   end
 end
