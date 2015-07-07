@@ -2,6 +2,8 @@
 
 Minimal metadata extractor for the GitHub API. Ultimately the goal is to get this to produce output similar to that described in [this blog post](http://www.arfon.org/json-ld-for-software-discovery-reuse-and-credit).
 
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.18873.svg)](http://dx.doi.org/10.5281/zenodo.19630)
+
 ```javascript
 {
   "@context": "http://schema.org",
