@@ -44,17 +44,24 @@ metamatter extract arfon/metamatter
       "name": "Arfon Smith",
       "email": "arfon.smith@gmail.com",
       "login": "arfon",
-      "contributions": 7
+      "contributions": 10
     }
   ],
   "tags": [
-    "api",
-    "extractor",
-    "minimal",
-    "metadata",
-    "github",
-    "metamatter"
-  ]
+    "ultimately",
+    "produce",
+    "blog",
+    "usage",
+    "post",
+    "goal",
+    "similar",
+    "output"
+  ],
+  "license": {
+    "name": "MIT License",
+    "url": "https://api.github.com/licenses/mit"
+  },
+  "doi": "http://dx.doi.org/10.5281/zenodo.19630"
 }
 
 ```
