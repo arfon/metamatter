@@ -4,12 +4,10 @@ module Metamatter
   class Contributors
     include Helpers
 
-    attr_accessor :owner
     attr_accessor :repository
 
-    def initialize(options)
-      @owner = options[:owner]
-      @repository = options[:repository]
+    def initialize(repository)
+      @repository = repository
     end
 
     def list
@@ -24,7 +22,7 @@ module Metamatter
     end
 
     def github_response
-      @contributors_response ||= client.contributors("#{owner}/#{repository}")
+      @contributors_response ||= client.contributors(repository.name_with_owner)
     end
   end
 end

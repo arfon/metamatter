@@ -4,12 +4,10 @@ module Metamatter
   class Readme
     include Helpers
 
-    attr_accessor :owner
     attr_accessor :repository
 
-    def initialize(options)
-      @owner = options[:owner]
-      @repository = options[:repository]
+    def initialize(repository)
+      @repository = repository
     end
 
     def contents
@@ -18,7 +16,7 @@ module Metamatter
     end
 
     def github_response
-      @readme_response ||= client.readme("#{owner}/#{repository}")
+      @github_response ||= client.readme(repository.name_with_owner)
     end
   end
 end
