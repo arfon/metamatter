@@ -5,7 +5,7 @@ require 'thor'
 class MetamatterCli < Thor
   desc "extract REPO_WITH_OWNER", "Extract the authors from a GitHub repository"
   def extract(repo_with_owner)
-    puts Metamatter.extract(repo_with_owner)
+    puts Metamatter::Repository.new(repo_with_owner).extract
   end
 end
 
