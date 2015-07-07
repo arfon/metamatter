@@ -12,9 +12,11 @@ module Metamatter
     end
 
     def extract
-      authors = Contributors.new(:repository => repository, :owner => owner).list
+      authors = Contributors.new(:repository => repository,
+                                 :owner => owner).list
       # To some LDA analysis on the README to work out what this project is doing
-      tags = Classification.new(:repository => repository, :owner => owner).tags
+      tags = Classification.new(:repository => repository,
+                                :owner => owner).tags
 
       return JSON.pretty_generate({:authors => authors, :tags => tags})
     end
