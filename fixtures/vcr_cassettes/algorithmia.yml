@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.algorithmia.com/v1/algo/tags/AutoTagGithub
+    body:
+      encoding: UTF-8
+      string: '["arfon","metamatter"]'
+    headers:
+      Authorization:
+      - "<ALGORITHMIA_TOKEN>"
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+      Content-Length:
+      - '159'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"result":{"output":2,"blog":1,"context":1,"usage":1,"entities":1,"post":1,"similar":1,"semantic":1},"metadata":{"content_type":"json","duration":0.000486793}}'
+    http_version: 
+  recorded_at: Sat, 25 Jul 2015 21:18:33 GMT
+recorded_with: VCR 2.9.3

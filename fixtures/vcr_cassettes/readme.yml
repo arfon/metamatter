@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/arfon/metamatter/readme
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.drax-preview+json
+      User-Agent:
+      - Octokit Ruby Gem 4.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sat, 25 Jul 2015 21:28:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4997'
+      X-Ratelimit-Reset:
+      - '1437862937'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Last-Modified:
+      - Sat, 25 Jul 2015 20:16:22 GMT
+      Etag:
+      - W/"783ea7988d820497bcbfb678c8d0467a"
+      X-Oauth-Scopes:
+      - public_repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Github-Media-Type:
+      - github.drax-preview; format=json
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - default-src 'none'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Github-Request-Id:
+      - 56AACDA8:4122:7A91DFA:55B3FF6E
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Served-By:
+      - a6882e5cd2513376cb9481dbcd83f3a2
+    body:
+      encoding: UTF-8
+      string: '{"name":"README.md","path":"README.md","sha":"f009862b43ddae3464dfc432eb852e8efb004015","size":1948,"url":"https://api.github.com/repos/arfon/metamatter/contents/README.md?ref=master","html_url":"https://github.com/arfon/metamatter/blob/master/README.md","git_url":"https://api.github.com/repos/arfon/metamatter/git/blobs/f009862b43ddae3464dfc432eb852e8efb004015","download_url":"https://raw.githubusercontent.com/arfon/metamatter/master/README.md","type":"file","content":"IyBNZXRhbWF0dGVyCgpbIVtET0ldKGh0dHBzOi8vemVub2RvLm9yZy9iYWRn\nZS9kb2kvMTAuNTI4MS96ZW5vZG8uMTg4NzMuc3ZnKV0oaHR0cDovL2R4LmRv\naS5vcmcvMTAuNTI4MS96ZW5vZG8uMTk2MzApCgpNaW5pbWFsIG1ldGFkYXRh\nIGV4dHJhY3RvciBmb3IgdGhlIEdpdEh1YiBBUEkuIFVsdGltYXRlbHkgdGhl\nIGdvYWwgaXMgdG8gZ2V0IHRoaXMgdG8gcHJvZHVjZSBvdXRwdXQgc2ltaWxh\nciB0byB0aGF0IGRlc2NyaWJlZCBpbiBbdGhpcyBibG9nIHBvc3RdKGh0dHA6\nLy93d3cuYXJmb24ub3JnL2pzb24tbGQtZm9yLXNvZnR3YXJlLWRpc2NvdmVy\neS1yZXVzZS1hbmQtY3JlZGl0KS4gQ3VycmVudGx5IG5vbmUgb2YgdGhlIGVu\ndGl0aWVzIGluIHRoZSBvdXRwdXQgaGF2ZSBhbnkgc2VtYW50aWMgY29udGV4\ndC4KCmBgYGphdmFzY3JpcHQKewogICJAY29udGV4dCI6ICJodHRwOi8vc2No\nZW1hLm9yZyIsCiAgIkB0eXBlIjogIkNvZGUiLAogICJuYW1lIjogIkZpZGdp\ndCIsCiAgImNvZGVSZXBvc2l0b3J5IjogImh0dHBzOi8vZ2l0aHViLmNvbS9h\ncmZvbi9maWRnaXQiLAogICJjaXRhdGlvbiI6ICJodHRwOi8vZHguZG9pLm9y\nZy8xMC42MDg0L205LmZpZ3NoYXJlLjgyODQ4NyIsCiAgImRlc2NyaXB0aW9u\nIjogIkFuIHVuZ29kbHkgdW5pb24gb2YgR2l0SHViIGFuZCBGaWdzaGFyZSBo\ndHRwOi8vZmlkZ2l0LmFyZm9uLm9yZyIsCiAgImRhdGVDcmVhdGVkIjogIjIw\nMTMtMTAtMTkiLAogICJsaWNlbnNlIjogImh0dHA6Ly9vcGVuc291cmNlLm9y\nZy9saWNlbnNlcy9NSVQiLAogICJhdXRob3IiOiB7CiAgICAiQHR5cGUiOiAi\nUGVyc29uIiwKICAgICJuYW1lIjogIkFyZm9uIFNtaXRoIiwKICAgICJAaWQi\nOiAiaHR0cDovL29yY2lkLm9yZy8wMDAwLTAwMDItMzk1Ny0yNDc0IiwKICAg\nICJlbWFpbCI6ICJhcmZvbkBnaXRodWIuY29tIgogIH0KfQpgYGAKCiMjIFVz\nYWdlCgpgYGBydWJ5CkFMR09SSVRITUlBX1RPS0VOID0geW91cl9hbGdvcml0\naG1pYV90b2tlbgpHSVRIVUJfVE9LRU4gPSB5b3VyX2dpdGh1Yl90b2tlbgoK\ncmVwb3NpdG9yeSA9IE1ldGFtYXR0ZXI6OlJlcG9zaXRvcnkubmV3KCdhcmZv\nbi9tZXRhbWF0dGVyJykKcmVwb3NpdG9yeS5leHRyYWN0ICAgICM9PiAneyJh\ndXRob3JzIjogW3sibmFtZSI6ICJBcmZvbiBTbWl0aCIsICJlbWFpbCI6ImFy\nZm9uLnNtaXRoQGdtYWlsLmNvbSIgLi4uCgpgYGAKCmBgYGJhc2gKR0lUSFVC\nX1RPS0VOPXlvdXJfZ2l0aHViX3Rva2VuIEFMR09SSVRITUlBX1RPS0VOPXlv\ndXJfYWxnb3JpdGhtaWFfdG9rZW5cCm1ldGFtYXR0ZXIgZXh0cmFjdCBhcmZv\nbi9tZXRhbWF0dGVyCgp7CiAgInJlcG9zaXRvcnkiOiB7CiAgICAibmFtZSI6\nICJtZXRhbWF0dGVyIiwKICAgICJsb2NhdGlvbiI6ICJodHRwczovL2dpdGh1\nYi5jb20vYXJmb24vbWV0YW1hdHRlciIsCiAgICAiZGVzY3JpcHRpb24iOiAi\nTWluaW1hbCBtZXRhZGF0YSBleHRyYWN0b3IgZm9yIHRoZSBHaXRIdWIgQVBJ\nIiwKICAgICJjcmVhdGVkX2F0IjogIjIwMTUtMDctMDYgMTA6NDI6MTIgVVRD\nIgogIH0sCiAgImF1dGhvcnMiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkFy\nZm9uIFNtaXRoIiwKICAgICAgImVtYWlsIjogImFyZm9uLnNtaXRoQGdtYWls\nLmNvbSIsCiAgICAgICJsb2dpbiI6ICJhcmZvbiIsCiAgICAgICJjb250cmli\ndXRpb25zIjogMTAKICAgIH0KICBdLAogICJ0YWdzIjogWwogICAgImFwaSIs\nCiAgICAiZXh0cmFjdG9yIiwKICAgICJtaW5pbWFsIiwKICAgICJtZXRhZGF0\nYSIsCiAgICAiZ2l0aHViIiwKICAgICJtZXRhbWF0dGVyIgogIF0sCiAgImxp\nY2Vuc2UiOiB7CiAgICAibmFtZSI6ICJNSVQgTGljZW5zZSIsCiAgICAidXJs\nIjogImh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vbGljZW5zZXMvbWl0IgogIH0s\nCiAgImRvaSI6ICJodHRwOi8vZHguZG9pLm9yZy8xMC41MjgxL3plbm9kby4x\nOTYzMCIKfQoKYGBgCg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/arfon/metamatter/contents/README.md?ref=master","git":"https://api.github.com/repos/arfon/metamatter/git/blobs/f009862b43ddae3464dfc432eb852e8efb004015","html":"https://github.com/arfon/metamatter/blob/master/README.md"}}'
+    http_version: 
+  recorded_at: Sat, 25 Jul 2015 21:28:14 GMT
+recorded_with: VCR 2.9.3
