@@ -1,7 +1,7 @@
 require_relative 'helpers'
 
 module Metamatter
-  class Contributors
+  class Authors
     include Helpers
 
     attr_accessor :repository

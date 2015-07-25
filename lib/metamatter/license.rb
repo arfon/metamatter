@@ -14,11 +14,15 @@ module Metamatter
       !github_response.license.nil?
     end
 
-    def license_hash
-      {
-        :name => github_response.license.name,
-        :url => github_response.license.url
-      }
+    def license
+      if has_license?
+        {
+          :name => github_response.license.name,
+          :url => github_response.license.url
+        }
+      else
+        return nil
+      end
     end
 
     def github_response
