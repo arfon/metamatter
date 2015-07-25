@@ -1,6 +1,7 @@
 # Metamatter
 
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.18873.svg)](http://dx.doi.org/10.5281/zenodo.19630)
+[![Build Status](https://travis-ci.org/arfon/metamatter.svg?branch=master)](https://travis-ci.org/arfon/metamatter)
 
 Minimal metadata extractor for the GitHub API. Ultimately the goal is to get this to produce output similar to that described in [this blog post](http://www.arfon.org/json-ld-for-software-discovery-reuse-and-credit). Currently none of the entities in the output have any semantic context.
 
