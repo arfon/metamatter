@@ -4,7 +4,7 @@ require_relative 'metamatter/classification'
 require_relative 'metamatter/authors'
 require_relative 'metamatter/helpers'
 require_relative 'metamatter/license'
-require_relative 'metamatter/doi'
+require_relative 'metamatter/readme'
 
 module Metamatter
   class Repository
@@ -66,7 +66,7 @@ module Metamatter
     #
     # Returns a DOI string or nil
     def doi
-      Metamatter::Doi.new(self).detect
+      Metamatter::Readme.new(self).doi
     end
 
     # Private: The GitHub Repository response
