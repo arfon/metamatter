@@ -1,7 +1,7 @@
 require_relative 'helpers'
 
 module Metamatter
-  class Doi
+  class Readme
     include Helpers
 
     attr_accessor :repository
@@ -21,7 +21,7 @@ module Metamatter
 
     # Find the Zenodo DOI if it's there
     # Returns a DOI URL http://dx.doi.org/10.5281/zenodo.9789 or nil
-    def detect
+    def doi
       if has_zenodo_badge?
         match = contents.match(/(dx.doi.org\/)\d{2}.\d{4}\/zenodo.\d*/)[0]
         return "http://#{match}"

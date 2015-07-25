@@ -1,6 +1,6 @@
 require_relative 'spec_helper'
 
-describe Metamatter::License do
+describe Metamatter::Readme do
   subject(:repository) { Metamatter::Repository.new('arfon/metamatter') }
   subject(:readme) { Metamatter::Readme.new(repository) }
 
@@ -19,7 +19,7 @@ describe Metamatter::License do
 
   it "knows what the DOI is" do
     VCR.use_cassette('readme') do
-      expect(readme.zenodo_doi).to eql("http://dx.doi.org/10.5281/zenodo.19630")
+      expect(readme.doi).to eql("http://dx.doi.org/10.5281/zenodo.19630")
     end
   end
 end

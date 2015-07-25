@@ -12,7 +12,7 @@ describe Metamatter::License do
 
   it "can returns the license hash" do
     VCR.use_cassette('license') do
-      expect(license.license_hash[:name]).to eql('MIT License')
+      expect(license.license[:name]).to eql('MIT License')
     end
   end
 end
