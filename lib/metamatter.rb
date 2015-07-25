@@ -1,9 +1,10 @@
 require 'octokit'
+
 require_relative 'metamatter/classification'
-require_relative 'metamatter/contributors'
+require_relative 'metamatter/authors'
 require_relative 'metamatter/helpers'
 require_relative 'metamatter/license'
-require_relative 'metamatter/readme'
+require_relative 'metamatter/doi'
 
 module Metamatter
   class Repository
@@ -12,26 +13,26 @@ module Metamatter
     attr_accessor :owner
     attr_accessor :name
 
+    # Public: Initialize a new Repository from a GitHub repo with owner
+    #
+    # repo_with_owner - e.g. arfon/metamatter
+    #
+    # Returns a Repository.
     def initialize(repo_with_owner)
       @owner, @name = repo_with_owner.split('/')
     end
 
+    # Public: Convenience method for returning the owner with name
+    #
+    # Returns a string e.g. 'arfon/metamatter'
     def name_with_owner
       [owner, name].join('/')
     end
 
+    # Public: Returns the full metadata for the repository
+    #
+    # Returns metatdata hash.
     def extract
-      authors = Contributors.new(self).list
-
-      # To some LDA analysis on the README to work out what this project is doing
-      tags = Classification.new(self).tags
-
-      # License detection
-      license = License.new(self).license_hash
-
-      # README parsing for DOI
-      doi = Readme.new(self).zenodo_doi
-
       return JSON.pretty_generate({ :repository => self.to_hash,
                                     :authors => authors,
                                     :tags => tags,
@@ -39,10 +40,45 @@ module Metamatter
                                     :doi => doi })
     end
 
+    # Public: Returns the full list of contributors to the repository sorted
+    #         by their contribution count
+    #
+    # Returns authors hash.
+    def authors
+      Metamatter::Authors.new(self).list
+    end
+
+    # Public: Returns the tags from the Algorithmia classification
+    #
+    # Returns list of tags or nil.
+    def tags
+      Metamatter::Classification.new(self).tags
+    end
+
+    # Public: Returns the license detected for the repository
+    #
+    # Returns license hash or nil
+    def license
+      Metamatter::License.new(self).license
+    end
+
+    # Public: Returns any known DOIs for the repository
+    #
+    # Returns a DOI string or nil
+    def doi
+      Metamatter::Doi.new(self).detect
+    end
+
+    # Private: The GitHub Repository response
+    #
+    # Returns a cached Octokit response hash
     def github_response
       @github_response ||= client.repository(name_with_owner)
     end
 
+    # Private: Returns a summary hash for the repository
+    #
+    # Returns a hash
     def to_hash
       {
         :name => github_response.name,
