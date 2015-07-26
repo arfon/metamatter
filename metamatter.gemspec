@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Metamatter::VERSION
   spec.authors       = ["Arfon Smith"]
   spec.email         = ["arfon.smith@gmail.com"]
-  spec.summary       = "A Ruby Gem for extracting minmal metadata from a GitHub repository"
+  spec.summary       = "A RubyGem for extracting minmal metadata from a GitHub repository"
   spec.homepage      = "https://github.com/arfon/metamatter"
   spec.license       = "MIT"
 
