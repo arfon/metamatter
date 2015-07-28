@@ -6,7 +6,7 @@ describe Metamatter::Readme do
 
   it "can return the README contents" do
     VCR.use_cassette('readme') do
-      expect(readme.contents.size).to eql(1948)
+      expect(readme.contents.size).to eql(2158)
       expect(readme.contents).to match(/Minimal metadata extractor/)
     end
   end
@@ -19,7 +19,7 @@ describe Metamatter::Readme do
 
   it "knows what the DOI is" do
     VCR.use_cassette('readme') do
-      expect(readme.doi).to eql("http://dx.doi.org/10.5281/zenodo.19630")
+      expect(readme.doi).to eql("10.5281/zenodo.19630")
     end
   end
 end

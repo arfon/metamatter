@@ -1,7 +1,8 @@
 require 'octokit'
 
-require_relative 'metamatter/classification'
 require_relative 'metamatter/authors'
+require_relative 'metamatter/classification'
+require_relative 'metamatter/datacite'
 require_relative 'metamatter/helpers'
 require_relative 'metamatter/license'
 require_relative 'metamatter/readme'
@@ -66,7 +67,14 @@ module Metamatter
     #
     # Returns a DOI string or nil
     def doi
-      Metamatter::Readme.new(self).doi
+      # Try README first
+      if readme_doi = Metamatter::Readme.new(self).doi
+        return readme_doi
+      elsif datacite_doi = Metamatter::Datacite.new(self).doi
+        return datacite_doi.first
+      else
+        return nil
+      end
     end
 
     # Private: The GitHub Repository response

@@ -28,7 +28,18 @@ describe Metamatter do
 
   it "can return #doi" do
     VCR.use_cassette('readme') do
-      expect(subject.doi).to eql("http://dx.doi.org/10.5281/zenodo.19630")
+      expect(subject.doi).to eql("10.5281/zenodo.19630")
+    end
+  end
+
+  # Zenodo DOI (from badge) is 10.5281/zenodo.20046
+  # Datacite DOI is 10.5281/ZENODO.20039
+  it "can return the Datacite DOI when there are both Zenodo and Datacite entries" do
+    repository = Metamatter::Repository.new('articlemetrics/lagotto')
+    VCR.use_cassette('datacite') do
+      VCR.use_cassette('lagotto_readme') do
+        expect(repository.doi).to eql("10.5281/zenodo.20046")
+      end
     end
   end
 end

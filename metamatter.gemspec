@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "algorithmia", "~> 0.2.0"
+  spec.add_dependency "httparty", "~> 0.13"
   spec.add_dependency "octokit", "~> 4.0"
   spec.add_dependency "thor", "~> 0.19"
 

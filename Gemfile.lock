@@ -3,6 +3,7 @@ PATH
   specs:
     metamatter (0.0.2)
       algorithmia (~> 0.2.0)
+      httparty (~> 0.13)
       octokit (~> 4.0)
       thor (~> 0.19)
 
