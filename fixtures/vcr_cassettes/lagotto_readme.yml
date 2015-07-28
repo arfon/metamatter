@@ -1,0 +1,157 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/articlemetrics/lagotto/readme
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.drax-preview+json
+      User-Agent:
+      - Octokit Ruby Gem 4.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 28 Jul 2015 12:03:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '160'
+      Status:
+      - 301 Moved Permanently
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4994'
+      X-Ratelimit-Reset:
+      - '1438087061'
+      X-Oauth-Scopes:
+      - public_repo, user
+      X-Accepted-Oauth-Scopes:
+      - admin:repo_hook, delete_repo, read:repo_hook, repo, repo:status, repo_deployment,
+        write:repo_hook
+      Location:
+      - https://api.github.com/repositories/4208139/readme
+      X-Github-Media-Type:
+      - github.drax-preview; format=json
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - default-src 'none'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Github-Request-Id:
+      - 92C798E7:4149:206CB3A:55B76F8A
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept-Encoding
+      X-Served-By:
+      - 2811da37fbdda4367181b328b22b2499
+    body:
+      encoding: UTF-8
+      string: '{"message":"Moved Permanently","url":"https://api.github.com/repositories/4208139/readme","documentation_url":"https://developer.github.com/v3/#http-redirects"}'
+    http_version: 
+  recorded_at: Tue, 28 Jul 2015 12:03:22 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repositories/4208139/readme
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.drax-preview+json
+      User-Agent:
+      - Octokit Ruby Gem 4.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <GITHUB_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 28 Jul 2015 12:03:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4993'
+      X-Ratelimit-Reset:
+      - '1438087061'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Last-Modified:
+      - Mon, 27 Jul 2015 05:38:49 GMT
+      Etag:
+      - W/"44cdc54d39b377cefd1a817473609b39"
+      X-Oauth-Scopes:
+      - public_repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Github-Media-Type:
+      - github.drax-preview; format=json
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - default-src 'none'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Github-Request-Id:
+      - 92C798E7:4146:1AA2C37:55B76F8B
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Served-By:
+      - 474556b853193c38f1b14328ce2d1b7d
+    body:
+      encoding: UTF-8
+      string: '{"name":"README.md","path":"README.md","sha":"f03692a2d0fe6a3cc8099e45880662742a514040","size":2904,"url":"https://api.github.com/repos/lagotto/lagotto/contents/README.md?ref=master","html_url":"https://github.com/lagotto/lagotto/blob/master/README.md","git_url":"https://api.github.com/repos/lagotto/lagotto/git/blobs/f03692a2d0fe6a3cc8099e45880662742a514040","download_url":"https://raw.githubusercontent.com/lagotto/lagotto/master/README.md","type":"file","content":"IyBMYWdvdHRvCgpbIVtCdWlsZCBTdGF0dXNdKGh0dHBzOi8vdHJhdmlzLWNp\nLm9yZy9sYWdvdHRvL2xhZ290dG8ucG5nP2JyYW5jaD1tYXN0ZXIpXShodHRw\nczovL3RyYXZpcy1jaS5vcmcvbGFnb3R0by9sYWdvdHRvKQpbIVtDb2RlIENs\naW1hdGVdKGh0dHBzOi8vY29kZWNsaW1hdGUuY29tL2dpdGh1Yi9sYWdvdHRv\nL2xhZ290dG8ucG5nKV0oaHR0cHM6Ly9jb2RlY2xpbWF0ZS5jb20vZ2l0aHVi\nL2xhZ290dG8vbGFnb3R0bykKWyFbQ29kZSBDbGltYXRlIFRlc3QgQ292ZXJh\nZ2VdKGh0dHBzOi8vY29kZWNsaW1hdGUuY29tL2dpdGh1Yi9sYWdvdHRvL2xh\nZ290dG8vY292ZXJhZ2UucG5nKV0oaHR0cHM6Ly9jb2RlY2xpbWF0ZS5jb20v\nZ2l0aHViL2xhZ290dG8vbGFnb3R0bykKWyFbRE9JXShodHRwczovL3plbm9k\nby5vcmcvYmFkZ2UvZG9pLzEwLjUyODEvemVub2RvLjIwMDQ2LnN2ZyldKGh0\ndHA6Ly9kb2kub3JnLzEwLjUyODEvemVub2RvLjIwMDQ2KQoKTGFnb3R0byBh\nbGxvd3MgYSB1c2VyIHRvIHRyYWNrIGV2ZW50cyBhcm91bmQgcmVzZWFyY2gg\nYXJ0aWNsZXMgYW5kIG90aGVyIHNjaG9sYXJseSBvdXRwdXRzLCBpbmNsdWRp\nbmcgaG93IG9mdGVuIGEgd29yayBoYXMgYmVlbiB2aWV3ZWQsIGNpdGVkLCBz\nYXZlZCwgZGlzY3Vzc2VkIGFuZCByZWNvbW1lbmRlZC4gVGhlIGFwcGxpY2F0\naW9uIHdhcyBjYWxsZWQgQXJ0aWNsZS1MZXZlbCBNZXRyaWNzIChBTE0pIHVu\ndGlsIFNlcHRlbWJlciAyMDE0IGFuZCB3YXMgc3RhcnRlZCBpbiBNYXJjaCAy\nMDA5IGJ5IHRoZSBPcGVuIEFjY2VzcyBwdWJsaXNoZXIgW1B1YmxpYyBMaWJy\nYXJ5IG9mIFNjaWVuY2UgKFBMT1MpXShodHRwOi8vd3d3LnBsb3Mub3JnLyku\nIFZpc2l0IHRoZSBbTGFnb3R0byB3ZWJzaXRlXShodHRwOi8vbGFnb3R0by5p\nbykgdG8gbGVhcm4gbW9yZS4KCiMjIEhvdyB0byBzdGFydCBkZXZlbG9waW5n\nIG5vdz8KCmBMYWdvdHRvYCB1c2VzIFtWYWdyYW50XShodHRwczovL3d3dy52\nYWdyYW50dXAuY29tLykgYW5kIFtWaXJ0dWFsYm94XShodHRwczovL3d3dy52\naXJ0dWFsYm94Lm9yZy8pIGZvciBzZXR0aW5nIHVwIHRoZSBkZXZlbG9wbWVu\ndCBlbnZpcm9ubWVudC4gVG8gc3RhcnQgZGV2ZWxvcGluZyBub3cgb24geW91\nciBsb2NhbCBtYWNoaW5lIChNYWMgT1MgWCwgTGludXggb3IgV2luZG93cyk6\nCgoxLiBJbnN0YWxsIFZhZ3JhbnQ6IGh0dHBzOi8vd3d3LnZhZ3JhbnR1cC5j\nb20vZG93bmxvYWRzLmh0bWwKMS4gSW5zdGFsbCBWaXJ0dWFsYm94OiBodHRw\nczovL3d3dy52aXJ0dWFsYm94Lm9yZy93aWtpL0Rvd25sb2FkcwoyLiBDbG9u\nZSB0aGlzIHJlcG9zaXRvcnkgYGdpdCBjbG9uZSBnaXRAZ2l0aHViLmNvbTps\nYWdvdHRvL2xhZ290dG8uZ2l0YAozLiBDZCBpbnRvIGl0CjQuIENvcHkgdGhl\nIGZpbGUgYC5lbnYuZXhhbXBsZWAgdG8gYC5lbnZgIGFuZCBtYWtlIGFueSBj\naGFuZ2VzIHRvIHRoZSBjb25maWd1cmF0aW9uIGFzIG5lZWRlZAo1LiBSdW4g\nYHZhZ3JhbnQgdXBgCgpPbmNlIHRoZSBzZXR1cCBpcyBjb21wbGV0ZSAoaXQg\nbWlnaHQgdGFrZSB1cCB0byAxNSBtaW51dGVzKSwgeW91J2xsIGJlIGFibGUg\ndG8gb3BlbiB1cCBhIGJyb3dzZXIgYW5kIG5hdmlnYXRlIHRvIFtodHRwOi8v\nMTAuMi4yLjRdKGh0dHA6Ly8xMC4yLjIuNCksIGFuZCB5b3Ugc2hvdWxkIHNl\nZSB0aGlzIHNjcmVlbjoKCiFbTGFnb3R0byBzY3JlZW5zaG90XShodHRwczov\nL2dpdGh1Yi5jb20vbGFnb3R0by9sYWdvdHRvL2Jsb2IvbWFzdGVyL3B1Ymxp\nYy9pbWFnZXMvc3RhcnQucG5nKQoKIyMgRG9jdW1lbnRhdGlvbgoKRGV0YWls\nZWQgaW5zdHJ1Y3Rpb25zIG9uIGhvdyB0byBzdGFydCBkZXZlbG9waW5nIGFy\nZSBbaGVyZV0oaHR0cHM6Ly9naXRodWIuY29tL2xhZ290dG8vbGFnb3R0by9i\nbG9iL21hc3Rlci9kb2NzL2luc3RhbGxhdGlvbi5tZCkuIFRoZXJlIGlzIGV4\ndGVuc2l2ZSBkb2N1bWVudGF0aW9uIC0gaW5jbHVkaW5nIGluc3RhbGxhdGlv\nbiBpbnN0cnVjdGlvbnMgLSBhdCB0aGUgW0xhZ290dG8gd2Vic2l0ZV0oaHR0\ncDovL2xhZ290dG8uaW8pLgoKIyMgRGlzY3Vzc2lvbgpQbGVhc2UgZGlyZWN0\nIHF1ZXN0aW9ucyBhYm91dCB0aGUgYXBwbGljYXRpb24gdG8gdGhlIFtkaXNj\ndXNzaW9uIGZvcnVtXShodHRwOi8vZGlzY3Vzcy5sYWdvdHRvLmlvKS4gVXNl\nIHRoZSBbR2l0aHViIElzc3VlIFRyYWNrZXJdKGh0dHBzOi8vZ2l0aHViLmNv\nbS9sYWdvdHRvL2xhZ290dG8vaXNzdWVzKSB0byBmb2xsb3cgdGhlIG9uZ29p\nbmcgZGV2ZWxvcG1lbnQsIG9yIHVzZSB0aGUgW1dhZmZsZSBCb2FyZF0oaHR0\ncHM6Ly93YWZmbGUuaW8vbGFnb3R0by9sYWdvdHRvKSBmb3IgYSBkZXZlbG9w\nbWVudCBvdmVydmlldy4KClshW1N0b3JpZXMgaW4gUHJvZ3Jlc3NdKGh0dHBz\nOi8vYmFkZ2Uud2FmZmxlLmlvL2xhZ290dG8vbGFnb3R0by5zdmc/bGFiZWw9\naW4lMjBwcm9ncmVzcyZ0aXRsZT1JbiUyMFByb2dyZXNzKV0oaHR0cHM6Ly93\nYWZmbGUuaW8vbGFnb3R0by9sYWdvdHRvKQoKIyMgTm90ZSBvbiBQYXRjaGVz\nL1B1bGwgUmVxdWVzdHMKCiogRm9yayB0aGUgcHJvamVjdAoqIFdyaXRlIHRl\nc3RzIGZvciB5b3VyIG5ldyBmZWF0dXJlIG9yIGEgdGVzdCB0aGF0IHJlcHJv\nZHVjZXMgYSBidWcKKiBJbXBsZW1lbnQgeW91ciBmZWF0dXJlIG9yIG1ha2Ug\nYSBidWcgZml4CiogRG8gbm90IG1lc3Mgd2l0aCBSYWtlZmlsZSwgdmVyc2lv\nbiBvciBoaXN0b3J5CiogQ29tbWl0LCBwdXNoIGFuZCBtYWtlIGEgcHVsbCBy\nZXF1ZXN0LiBCb251cyBwb2ludHMgZm9yIHRvcGljYWwgYnJhbmNoZXMuCgoj\nIyBMaWNlbnNlCkxhZ290dG8gaXMgcmVsZWFzZWQgdW5kZXIgdGhlIFtNSVQg\nTGljZW5zZV0oaHR0cHM6Ly9naXRodWIuY29tL2xhZ290dG8vbGFnb3R0by9i\nbG9iL21hc3Rlci9MSUNFTlNFLm1kKS4K\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/lagotto/lagotto/contents/README.md?ref=master","git":"https://api.github.com/repos/lagotto/lagotto/git/blobs/f03692a2d0fe6a3cc8099e45880662742a514040","html":"https://github.com/lagotto/lagotto/blob/master/README.md"}}'
+    http_version: 
+  recorded_at: Tue, 28 Jul 2015 12:03:23 GMT
+recorded_with: VCR 2.9.3

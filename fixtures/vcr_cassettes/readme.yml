@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Sat, 25 Jul 2015 21:28:14 GMT
+      - Tue, 28 Jul 2015 11:39:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -35,15 +35,15 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4997'
+      - '4996'
       X-Ratelimit-Reset:
-      - '1437862937'
+      - '1438087061'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Last-Modified:
-      - Sat, 25 Jul 2015 20:16:22 GMT
+      - Tue, 28 Jul 2015 11:38:45 GMT
       Etag:
-      - W/"783ea7988d820497bcbfb678c8d0467a"
+      - W/"edf7abd3e13a076caaacfece92f50b19"
       X-Oauth-Scopes:
       - public_repo, user
       X-Accepted-Oauth-Scopes:
@@ -67,16 +67,16 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Github-Request-Id:
-      - 56AACDA8:4122:7A91DFA:55B3FF6E
+      - 92C798E7:4CC8:1D8021B:55B769D4
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; preload
       X-Content-Type-Options:
       - nosniff
       X-Served-By:
-      - a6882e5cd2513376cb9481dbcd83f3a2
+      - bd82876e9bf04990f289ba22f246ee9b
     body:
       encoding: UTF-8
-      string: '{"name":"README.md","path":"README.md","sha":"f009862b43ddae3464dfc432eb852e8efb004015","size":1948,"url":"https://api.github.com/repos/arfon/metamatter/contents/README.md?ref=master","html_url":"https://github.com/arfon/metamatter/blob/master/README.md","git_url":"https://api.github.com/repos/arfon/metamatter/git/blobs/f009862b43ddae3464dfc432eb852e8efb004015","download_url":"https://raw.githubusercontent.com/arfon/metamatter/master/README.md","type":"file","content":"IyBNZXRhbWF0dGVyCgpbIVtET0ldKGh0dHBzOi8vemVub2RvLm9yZy9iYWRn\nZS9kb2kvMTAuNTI4MS96ZW5vZG8uMTg4NzMuc3ZnKV0oaHR0cDovL2R4LmRv\naS5vcmcvMTAuNTI4MS96ZW5vZG8uMTk2MzApCgpNaW5pbWFsIG1ldGFkYXRh\nIGV4dHJhY3RvciBmb3IgdGhlIEdpdEh1YiBBUEkuIFVsdGltYXRlbHkgdGhl\nIGdvYWwgaXMgdG8gZ2V0IHRoaXMgdG8gcHJvZHVjZSBvdXRwdXQgc2ltaWxh\nciB0byB0aGF0IGRlc2NyaWJlZCBpbiBbdGhpcyBibG9nIHBvc3RdKGh0dHA6\nLy93d3cuYXJmb24ub3JnL2pzb24tbGQtZm9yLXNvZnR3YXJlLWRpc2NvdmVy\neS1yZXVzZS1hbmQtY3JlZGl0KS4gQ3VycmVudGx5IG5vbmUgb2YgdGhlIGVu\ndGl0aWVzIGluIHRoZSBvdXRwdXQgaGF2ZSBhbnkgc2VtYW50aWMgY29udGV4\ndC4KCmBgYGphdmFzY3JpcHQKewogICJAY29udGV4dCI6ICJodHRwOi8vc2No\nZW1hLm9yZyIsCiAgIkB0eXBlIjogIkNvZGUiLAogICJuYW1lIjogIkZpZGdp\ndCIsCiAgImNvZGVSZXBvc2l0b3J5IjogImh0dHBzOi8vZ2l0aHViLmNvbS9h\ncmZvbi9maWRnaXQiLAogICJjaXRhdGlvbiI6ICJodHRwOi8vZHguZG9pLm9y\nZy8xMC42MDg0L205LmZpZ3NoYXJlLjgyODQ4NyIsCiAgImRlc2NyaXB0aW9u\nIjogIkFuIHVuZ29kbHkgdW5pb24gb2YgR2l0SHViIGFuZCBGaWdzaGFyZSBo\ndHRwOi8vZmlkZ2l0LmFyZm9uLm9yZyIsCiAgImRhdGVDcmVhdGVkIjogIjIw\nMTMtMTAtMTkiLAogICJsaWNlbnNlIjogImh0dHA6Ly9vcGVuc291cmNlLm9y\nZy9saWNlbnNlcy9NSVQiLAogICJhdXRob3IiOiB7CiAgICAiQHR5cGUiOiAi\nUGVyc29uIiwKICAgICJuYW1lIjogIkFyZm9uIFNtaXRoIiwKICAgICJAaWQi\nOiAiaHR0cDovL29yY2lkLm9yZy8wMDAwLTAwMDItMzk1Ny0yNDc0IiwKICAg\nICJlbWFpbCI6ICJhcmZvbkBnaXRodWIuY29tIgogIH0KfQpgYGAKCiMjIFVz\nYWdlCgpgYGBydWJ5CkFMR09SSVRITUlBX1RPS0VOID0geW91cl9hbGdvcml0\naG1pYV90b2tlbgpHSVRIVUJfVE9LRU4gPSB5b3VyX2dpdGh1Yl90b2tlbgoK\ncmVwb3NpdG9yeSA9IE1ldGFtYXR0ZXI6OlJlcG9zaXRvcnkubmV3KCdhcmZv\nbi9tZXRhbWF0dGVyJykKcmVwb3NpdG9yeS5leHRyYWN0ICAgICM9PiAneyJh\ndXRob3JzIjogW3sibmFtZSI6ICJBcmZvbiBTbWl0aCIsICJlbWFpbCI6ImFy\nZm9uLnNtaXRoQGdtYWlsLmNvbSIgLi4uCgpgYGAKCmBgYGJhc2gKR0lUSFVC\nX1RPS0VOPXlvdXJfZ2l0aHViX3Rva2VuIEFMR09SSVRITUlBX1RPS0VOPXlv\ndXJfYWxnb3JpdGhtaWFfdG9rZW5cCm1ldGFtYXR0ZXIgZXh0cmFjdCBhcmZv\nbi9tZXRhbWF0dGVyCgp7CiAgInJlcG9zaXRvcnkiOiB7CiAgICAibmFtZSI6\nICJtZXRhbWF0dGVyIiwKICAgICJsb2NhdGlvbiI6ICJodHRwczovL2dpdGh1\nYi5jb20vYXJmb24vbWV0YW1hdHRlciIsCiAgICAiZGVzY3JpcHRpb24iOiAi\nTWluaW1hbCBtZXRhZGF0YSBleHRyYWN0b3IgZm9yIHRoZSBHaXRIdWIgQVBJ\nIiwKICAgICJjcmVhdGVkX2F0IjogIjIwMTUtMDctMDYgMTA6NDI6MTIgVVRD\nIgogIH0sCiAgImF1dGhvcnMiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkFy\nZm9uIFNtaXRoIiwKICAgICAgImVtYWlsIjogImFyZm9uLnNtaXRoQGdtYWls\nLmNvbSIsCiAgICAgICJsb2dpbiI6ICJhcmZvbiIsCiAgICAgICJjb250cmli\ndXRpb25zIjogMTAKICAgIH0KICBdLAogICJ0YWdzIjogWwogICAgImFwaSIs\nCiAgICAiZXh0cmFjdG9yIiwKICAgICJtaW5pbWFsIiwKICAgICJtZXRhZGF0\nYSIsCiAgICAiZ2l0aHViIiwKICAgICJtZXRhbWF0dGVyIgogIF0sCiAgImxp\nY2Vuc2UiOiB7CiAgICAibmFtZSI6ICJNSVQgTGljZW5zZSIsCiAgICAidXJs\nIjogImh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vbGljZW5zZXMvbWl0IgogIH0s\nCiAgImRvaSI6ICJodHRwOi8vZHguZG9pLm9yZy8xMC41MjgxL3plbm9kby4x\nOTYzMCIKfQoKYGBgCg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/arfon/metamatter/contents/README.md?ref=master","git":"https://api.github.com/repos/arfon/metamatter/git/blobs/f009862b43ddae3464dfc432eb852e8efb004015","html":"https://github.com/arfon/metamatter/blob/master/README.md"}}'
+      string: '{"name":"README.md","path":"README.md","sha":"717f270417906ca0e466ddfa511b2babb3bb8129","size":2158,"url":"https://api.github.com/repos/arfon/metamatter/contents/README.md?ref=master","html_url":"https://github.com/arfon/metamatter/blob/master/README.md","git_url":"https://api.github.com/repos/arfon/metamatter/git/blobs/717f270417906ca0e466ddfa511b2babb3bb8129","download_url":"https://raw.githubusercontent.com/arfon/metamatter/master/README.md","type":"file","content":"IyBNZXRhbWF0dGVyCgpbIVtET0ldKGh0dHBzOi8vemVub2RvLm9yZy9iYWRn\nZS9kb2kvMTAuNTI4MS96ZW5vZG8uMTk2MzAuc3ZnKV0oaHR0cDovL2R4LmRv\naS5vcmcvMTAuNTI4MS96ZW5vZG8uMTk2MzApClshW0J1aWxkIFN0YXR1c10o\naHR0cHM6Ly90cmF2aXMtY2kub3JnL2FyZm9uL21ldGFtYXR0ZXIuc3ZnP2Jy\nYW5jaD1tYXN0ZXIpXShodHRwczovL3RyYXZpcy1jaS5vcmcvYXJmb24vbWV0\nYW1hdHRlcikKWyFbR2VtIFZlcnNpb25dKGh0dHBzOi8vYmFkZ2UuZnVyeS5p\nby9yYi9tZXRhbWF0dGVyLnN2ZyldKGh0dHA6Ly9iYWRnZS5mdXJ5LmlvL3Ji\nL21ldGFtYXR0ZXIpCgpNaW5pbWFsIG1ldGFkYXRhIGV4dHJhY3RvciBmb3Ig\ndGhlIEdpdEh1YiBBUEkuIFVsdGltYXRlbHkgdGhlIGdvYWwgaXMgdG8gZ2V0\nIHRoaXMgdG8gcHJvZHVjZSBvdXRwdXQgc2ltaWxhciB0byB0aGF0IGRlc2Ny\naWJlZCBpbiBbdGhpcyBibG9nIHBvc3RdKGh0dHA6Ly93d3cuYXJmb24ub3Jn\nL2pzb24tbGQtZm9yLXNvZnR3YXJlLWRpc2NvdmVyeS1yZXVzZS1hbmQtY3Jl\nZGl0KS4gQ3VycmVudGx5IG5vbmUgb2YgdGhlIGVudGl0aWVzIGluIHRoZSBv\ndXRwdXQgaGF2ZSBhbnkgc2VtYW50aWMgY29udGV4dC4KCmBgYGphdmFzY3Jp\ncHQKewogICJAY29udGV4dCI6ICJodHRwOi8vc2NoZW1hLm9yZyIsCiAgIkB0\neXBlIjogIkNvZGUiLAogICJuYW1lIjogIkZpZGdpdCIsCiAgImNvZGVSZXBv\nc2l0b3J5IjogImh0dHBzOi8vZ2l0aHViLmNvbS9hcmZvbi9maWRnaXQiLAog\nICJjaXRhdGlvbiI6ICJodHRwOi8vZHguZG9pLm9yZy8xMC42MDg0L205LmZp\nZ3NoYXJlLjgyODQ4NyIsCiAgImRlc2NyaXB0aW9uIjogIkFuIHVuZ29kbHkg\ndW5pb24gb2YgR2l0SHViIGFuZCBGaWdzaGFyZSBodHRwOi8vZmlkZ2l0LmFy\nZm9uLm9yZyIsCiAgImRhdGVDcmVhdGVkIjogIjIwMTMtMTAtMTkiLAogICJs\naWNlbnNlIjogImh0dHA6Ly9vcGVuc291cmNlLm9yZy9saWNlbnNlcy9NSVQi\nLAogICJhdXRob3IiOiB7CiAgICAiQHR5cGUiOiAiUGVyc29uIiwKICAgICJu\nYW1lIjogIkFyZm9uIFNtaXRoIiwKICAgICJAaWQiOiAiaHR0cDovL29yY2lk\nLm9yZy8wMDAwLTAwMDItMzk1Ny0yNDc0IiwKICAgICJlbWFpbCI6ICJhcmZv\nbkBnaXRodWIuY29tIgogIH0KfQpgYGAKCiMjIFVzYWdlCgpgYGBydWJ5CkFM\nR09SSVRITUlBX1RPS0VOID0geW91cl9hbGdvcml0aG1pYV90b2tlbgpHSVRI\nVUJfVE9LRU4gPSB5b3VyX2dpdGh1Yl90b2tlbgoKcmVwb3NpdG9yeSA9IE1l\ndGFtYXR0ZXI6OlJlcG9zaXRvcnkubmV3KCdhcmZvbi9tZXRhbWF0dGVyJykK\ncmVwb3NpdG9yeS5leHRyYWN0ICAgICM9PiAneyJhdXRob3JzIjogW3sibmFt\nZSI6ICJBcmZvbiBTbWl0aCIsICJlbWFpbCI6ImFyZm9uLnNtaXRoQGdtYWls\nLmNvbSIgLi4uCgpgYGAKCmBgYGJhc2gKR0lUSFVCX1RPS0VOPXlvdXJfZ2l0\naHViX3Rva2VuIEFMR09SSVRITUlBX1RPS0VOPXlvdXJfYWxnb3JpdGhtaWFf\ndG9rZW5cCm1ldGFtYXR0ZXIgZXh0cmFjdCBhcmZvbi9tZXRhbWF0dGVyCgp7\nCiAgInJlcG9zaXRvcnkiOiB7CiAgICAibmFtZSI6ICJtZXRhbWF0dGVyIiwK\nICAgICJsb2NhdGlvbiI6ICJodHRwczovL2dpdGh1Yi5jb20vYXJmb24vbWV0\nYW1hdHRlciIsCiAgICAiZGVzY3JpcHRpb24iOiAiTWluaW1hbCBtZXRhZGF0\nYSBleHRyYWN0b3IgZm9yIHRoZSBHaXRIdWIgQVBJIiwKICAgICJjcmVhdGVk\nX2F0IjogIjIwMTUtMDctMDYgMTA6NDI6MTIgVVRDIgogIH0sCiAgImF1dGhv\ncnMiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkFyZm9uIFNtaXRoIiwKICAg\nICAgImVtYWlsIjogImFyZm9uLnNtaXRoQGdtYWlsLmNvbSIsCiAgICAgICJs\nb2dpbiI6ICJhcmZvbiIsCiAgICAgICJjb250cmlidXRpb25zIjogMTAKICAg\nIH0KICBdLAogICJ0YWdzIjogWwogICAgImFwaSIsCiAgICAiZXh0cmFjdG9y\nIiwKICAgICJtaW5pbWFsIiwKICAgICJtZXRhZGF0YSIsCiAgICAiZ2l0aHVi\nIiwKICAgICJtZXRhbWF0dGVyIgogIF0sCiAgImxpY2Vuc2UiOiB7CiAgICAi\nbmFtZSI6ICJNSVQgTGljZW5zZSIsCiAgICAidXJsIjogImh0dHBzOi8vYXBp\nLmdpdGh1Yi5jb20vbGljZW5zZXMvbWl0IgogIH0sCiAgImRvaSI6ICJodHRw\nOi8vZHguZG9pLm9yZy8xMC41MjgxL3plbm9kby4xOTYzMCIKfQoKYGBgCg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/arfon/metamatter/contents/README.md?ref=master","git":"https://api.github.com/repos/arfon/metamatter/git/blobs/717f270417906ca0e466ddfa511b2babb3bb8129","html":"https://github.com/arfon/metamatter/blob/master/README.md"}}'
     http_version: 
-  recorded_at: Sat, 25 Jul 2015 21:28:14 GMT
+  recorded_at: Tue, 28 Jul 2015 11:39:00 GMT
 recorded_with: VCR 2.9.3

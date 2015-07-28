@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://search.datacite.org/api?fl=doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre,datacentre_symbol,prefix,relatedIdentifier&fq=has_metadata:true&q=relatedIdentifier:https://github.com/articlemetrics/lagotto&rows=1000&wt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Tue, 28 Jul 2015 11:55:37 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        {"responseHeader":{"status":0,"QTime":1},"response":{"numFound":1,"start":0,"docs":[{"datacentre_symbol":"CERN.ZENODO","datacentre":"CERN.ZENODO - ZENODO - Research. Shared.","prefix":"10.5281","doi":"10.5281/ZENODO.20039","relatedIdentifier":["IsSupplementTo:URL:https://github.com/articlemetrics/lagotto","IsSupplementTo:DOI:10.3789/isqv25no2.2013.04","HasPart:URL:https://zenodo.org/record/20039/files/alm_report_2015-07-13.zip"],"creator":["Public Library of Science"],"publisher":"Zenodo","title":["Cumulative PLOS ALM Report - July 2015"],"publicationYear":"2015","resourceTypeGeneral":"Dataset"}]}}
+    http_version: 
+  recorded_at: Tue, 28 Jul 2015 12:06:48 GMT
+- request:
+    method: get
+    uri: http://search.datacite.org/api?fl=doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre,datacentre_symbol,prefix,relatedIdentifier&fq=has_metadata:true&q=relatedIdentifier:https://github.com/articlemetrics/lagotto&rows=1000&wt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Tue, 28 Jul 2015 11:55:37 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        {"responseHeader":{"status":0,"QTime":0},"response":{"numFound":1,"start":0,"docs":[{"datacentre_symbol":"CERN.ZENODO","datacentre":"CERN.ZENODO - ZENODO - Research. Shared.","prefix":"10.5281","doi":"10.5281/ZENODO.20039","relatedIdentifier":["IsSupplementTo:URL:https://github.com/articlemetrics/lagotto","IsSupplementTo:DOI:10.3789/isqv25no2.2013.04","HasPart:URL:https://zenodo.org/record/20039/files/alm_report_2015-07-13.zip"],"creator":["Public Library of Science"],"publisher":"Zenodo","title":["Cumulative PLOS ALM Report - July 2015"],"publicationYear":"2015","resourceTypeGeneral":"Dataset"}]}}
+    http_version: 
+  recorded_at: Tue, 28 Jul 2015 12:06:48 GMT
+recorded_with: VCR 2.9.3
