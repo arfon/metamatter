@@ -1,6 +1,6 @@
 # Metamatter
 
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.18873.svg)](http://dx.doi.org/10.5281/zenodo.19630)
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19630.svg)](http://dx.doi.org/10.5281/zenodo.19630)
 [![Build Status](https://travis-ci.org/arfon/metamatter.svg?branch=master)](https://travis-ci.org/arfon/metamatter)
 [![Gem Version](https://badge.fury.io/rb/metamatter.svg)](http://badge.fury.io/rb/metamatter)
 
