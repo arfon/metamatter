@@ -12,10 +12,18 @@ module Metamatter
     def doi
       docs = datacite_response["response"]["docs"]
       return nil if docs.empty?
-      puts "Warning, more than one DOI from Datacite" if docs.size > 1
-      Array(docs).map do |doc|
+      detected_dois = Array(docs).map do |doc|
         doi = doc.fetch("doi", nil)
       end.compact
+
+      log_dois(detected_dois) if detected_dois.size > 1
+      return detected_dois
+    end
+
+    def log_dois(dois)
+      puts "Warning: More than one DOI from Datacite search returned"
+      puts "Search string: #{url}"
+      dois.each { |doi| puts doi }
     end
 
     def datacite_response
