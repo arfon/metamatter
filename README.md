@@ -50,6 +50,7 @@ metamatter extract arfon/metamatter
   "authors": [
     {
       "name": "Arfon Smith",
+      "orcid": "0000-0002-3957-2474",
       "email": "arfon.smith@gmail.com",
       "login": "arfon",
       "contributions": 10
