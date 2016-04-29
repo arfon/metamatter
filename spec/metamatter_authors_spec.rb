@@ -7,6 +7,7 @@ describe Metamatter::Authors do
   it "can list authors" do
     VCR.use_cassette('authors') do
       expect(authors.list.first[:login]).to eql('arfon')
+      expect(authors.list.first[:orcid]).to eql('0000-0002-3957-2474')
     end
   end
 end
